@@ -1,0 +1,21 @@
+/* Utility Classes */
+.wrapper {
+  grid-template-columns: 1fr;
+  height: 150vh;
+}
+
+.wrapper > div:nth-of-type(1) {
+  grid-column: 1;
+}
+
+.wrapper > div:nth-of-type(6) {
+  grid-column: 1;
+}
+
+.wrapper > div:nth-of-type(9) {
+  grid-column: 1;
+}
+
+.wrapper > div:nth-of-type(10) {
+  grid-column: 1;
+}

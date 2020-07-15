@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+/* Root */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Styling */
+body {
+  background: #333;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 10px;
+}
+
+h2 span {
+  font-size: 20px;
+}
+
+/* Utility Classes */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  height: 100vh;
+}
+
+.wrapper > div {
+  /* height: 210px; */
+  cursor: pointer;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  transition: all 0.5s ease-in;
+}
+
+.wrapper > div:hover { 
+  opacity: 0.7;
+  transform: scale(0.98);
+}
+
+.wrapper > div:nth-of-type(1) {
+  grid-column: 1/3;
+}
+
+.wrapper > div:nth-of-type(6) {
+  grid-column: 3/5;
+}
+
+.wrapper > div:nth-of-type(9) {
+  grid-column: 3/5;
+}
+
+.wrapper > div:nth-of-type(10) {
+  grid-column: 1/3;
+}
+
+.bg1 {
+  background: url('../img/bk1.jpg');
+}
+
+.bg2 {
+  background: url('../img/bk2.jpg');
+  color: #333;
+}
